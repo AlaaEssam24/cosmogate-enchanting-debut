@@ -20,15 +20,15 @@ const Footer = () => {
 
   return (
     <footer className="bg-secondary-dark text-secondary-foreground">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Brand Section */}
-          <div className="space-y-4">
-            <h3 className="font-playfair text-2xl font-bold text-primary-glow">
+          <div className="space-y-4 sm:col-span-2 lg:col-span-1">
+            <h3 className="font-playfair text-xl sm:text-2xl font-bold text-primary-glow">
               Cosmogate
             </h3>
-            <p className="font-inter text-sm leading-relaxed opacity-90">
+            <p className="font-inter text-sm leading-relaxed opacity-90 max-w-xs">
               Luxury beauty products crafted with the finest ingredients to enhance 
               your natural radiance and confidence.
             </p>
@@ -49,15 +49,15 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-playfair text-lg font-semibold text-primary-glow">
+            <h4 className="font-playfair text-base sm:text-lg font-semibold text-primary-glow">
               Quick Links
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 grid grid-cols-2 sm:grid-cols-1 gap-x-4 sm:gap-x-0">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="font-inter text-sm opacity-90 hover:text-primary-glow hover:opacity-100 transition-all duration-300"
+                    className="font-inter text-sm opacity-90 hover:text-primary-glow hover:opacity-100 transition-all duration-300 block"
                   >
                     {link.name}
                   </a>
@@ -68,38 +68,38 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="font-playfair text-lg font-semibold text-primary-glow">
+            <h4 className="font-playfair text-base sm:text-lg font-semibold text-primary-glow">
               Contact Us
             </h4>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-primary-glow" />
-                <span className="font-inter text-sm opacity-90">hello@cosmogate.com</span>
+              <div className="flex items-start space-x-3">
+                <Mail className="h-4 w-4 text-primary-glow mt-0.5 flex-shrink-0" />
+                <span className="font-inter text-sm opacity-90 break-all">hello@cosmogate.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-primary-glow" />
+                <Phone className="h-4 w-4 text-primary-glow flex-shrink-0" />
                 <span className="font-inter text-sm opacity-90">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-primary-glow" />
+                <MapPin className="h-4 w-4 text-primary-glow flex-shrink-0" />
                 <span className="font-inter text-sm opacity-90">New York, NY</span>
               </div>
             </div>
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-4">
-            <h4 className="font-playfair text-lg font-semibold text-primary-glow">
+          <div className="space-y-4 sm:col-span-2 lg:col-span-1">
+            <h4 className="font-playfair text-base sm:text-lg font-semibold text-primary-glow">
               Stay Updated
             </h4>
-            <p className="font-inter text-sm opacity-90">
+            <p className="font-inter text-sm opacity-90 max-w-xs">
               Subscribe to get special offers, new product launches, and beauty tips.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-3 max-w-xs">
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="bg-secondary/20 border-primary/30 text-secondary-foreground placeholder:text-secondary-foreground/60 focus:border-primary"
+                className="bg-secondary/20 border-primary/30 text-secondary-foreground placeholder:text-secondary-foreground/60 focus:border-primary text-sm"
               />
               <Button 
                 size="sm"
@@ -112,12 +112,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-primary/20 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p className="font-inter text-sm opacity-75">
+        <div className="border-t border-primary/20 pt-6 sm:pt-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between space-y-3 sm:space-y-0 text-center sm:text-left">
+            <p className="font-inter text-xs sm:text-sm opacity-75">
               © 2024 Cosmogate. All rights reserved.
             </p>
-            <p className="font-inter text-sm opacity-75">
+            <p className="font-inter text-xs sm:text-sm opacity-75">
               Crafted with 💎 for luxury beauty
             </p>
           </div>
