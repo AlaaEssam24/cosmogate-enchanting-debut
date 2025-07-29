@@ -20,6 +20,116 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+		<style>
+			.feature-card {
+			  transition: box-shadow 0.3s, transform 0.3s;
+			  border-radius: 2rem !important;
+			  min-height: 340px;
+			  padding: 3rem 2.5rem !important;
+			  display: flex;
+			  flex-direction: column;
+			  align-items: center;
+			  justify-content: space-between;
+			}
+			.feature-card .icon-gradient {
+			  margin-bottom: 2rem;
+			}
+			.feature-card h3 {
+			  margin-bottom: 1.5rem !important;
+			}
+			.feature-card p {
+			  margin-bottom: 0 !important;
+			  min-height: 70px;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			}
+			.feature-card:hover {
+			  box-shadow: 0 16px 48px rgba(59,198,232,0.18), 0 2px 8px rgba(59,198,232,0.08);
+			  transform: scale(1.045);
+			  z-index: 2;
+			}
+			.icon-gradient {
+			  width: 88px;
+			  height: 88px;
+			  border-radius: 50%;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  box-shadow: 0 2px 12px rgba(59,198,232,0.10);
+			  flex-shrink: 0;
+			}
+			.feature-icon-lg {
+			  width: 48px;
+			  height: 48px;
+			  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.08));
+			}
+			
+			/* Mobile responsive improvements */
+			@media (max-width: 991.98px) {
+			  .feature-card {
+				min-height: 300px !important;
+				padding: 2rem 1.5rem !important;
+			  }
+			  .icon-gradient {
+				width: 70px;
+				height: 70px;
+				margin-bottom: 1.5rem;
+			  }
+			  .feature-icon-lg {
+				width: 40px;
+				height: 40px;
+			  }
+			  .feature-card h3 {
+				font-size: 1.5rem !important;
+				margin-bottom: 1rem !important;
+			  }
+			  .feature-card p {
+				font-size: 1rem !important;
+				min-height: 60px;
+				text-align: center;
+			  }
+			}
+			
+			@media (max-width: 767.98px) {
+			  .feature-card {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				padding: 2rem 1.5rem !important;
+				min-height: 280px !important;
+				margin-bottom: 1.5rem;
+			  }
+			  .icon-gradient {
+				margin-right: 0 !important;
+				margin-bottom: 1.25rem;
+				width: 60px;
+				height: 60px;
+			  }
+			  .feature-card h3 {
+				font-size: 1.4rem !important;
+				margin-bottom: 1rem !important;
+			  }
+			  .feature-card p {
+				font-size: 0.95rem !important;
+				line-height: 1.5;
+				min-height: 50px;
+			  }
+			}
+			
+			@media (max-width: 575.98px) {
+			  .feature-card {
+				min-height: 260px !important;
+				padding: 1.5rem 1rem !important;
+			  }
+			  .feature-card h3 {
+				font-size: 1.25rem !important;
+			  }
+			  .feature-card p {
+				font-size: 0.9rem !important;
+			  }
+			}
+			</style>
   </head>
 
   <body>
